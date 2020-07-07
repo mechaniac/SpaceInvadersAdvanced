@@ -124,3 +124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  gm: {fileID: 0}
+  hitPrefab: {fileID: 5649868283061054732, guid: 6b4014c43c21ac54199c550126cae9af,
+    type: 3}

@@ -7,6 +7,7 @@ public class Projectile : LivingEntity
     float speed;
     Vector3 inheritedVelocity;
 
+    
     private void Update()
     {
         MoveForward();
