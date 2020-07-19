@@ -13,7 +13,7 @@ public class Ufo : LivingEntity
     public EnemyBulletPooler enemyBulletPooler;
 
     public float moveStep = 2f;
-    public Floatvariable myMoveStep;
+    public EnemySO myMoveStep;
 
     public float currentMove = 0f;
     

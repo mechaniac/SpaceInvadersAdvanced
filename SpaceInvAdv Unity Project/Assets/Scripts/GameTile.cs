@@ -14,13 +14,16 @@ public class GameTile : MonoBehaviour
 
     Text text;
 
-    public void InitializeTile(int x, int z)
+    public void InitializeTile(int x, int z, bool TileTextVisible)
     {
         xCoord = x;
         zCoord = z;
 
         text = GetComponentInChildren<Text>();
         text.text = $"{x} / {z}";
+
+        text.gameObject.SetActive(TileTextVisible);
+        
     }
 
     public void SetText(string addText)

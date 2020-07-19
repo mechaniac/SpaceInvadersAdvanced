@@ -11,9 +11,12 @@ public class Turret : MonoBehaviour
 
     public Projectile projectilePrefab;
 
+    AudioSource shotAS;
+
     private void Awake()
     {
         InitializeTurret();
+        shotAS = GetComponent<AudioSource>();
     }
 
     void InitializeTurret()
@@ -44,6 +47,7 @@ public class Turret : MonoBehaviour
                 p.transform.position = transform.position;
                 p.transform.parent = transform;
                 p.SetProjectileSpeed(20f, turretVeclocity);
+                shotAS.Play();
                 return;
 
             }

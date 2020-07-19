@@ -100,7 +100,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4d1e7b238d126e64d97224729a8fa5b7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c32ada097324d234abf686cf5e4eec89, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
@@ -356,7 +356,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6342529b942012f499c27a9a9ded233a, type: 2}
+      objectReference: {fileID: 2100000, guid: deb4bb37ba93e6645a4cf943028728bd, type: 2}
     - target: {fileID: 9031513020644737851, guid: a58cb6e59e81f594cb1a207de3351fbc,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

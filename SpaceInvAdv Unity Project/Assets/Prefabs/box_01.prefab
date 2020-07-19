@@ -125,5 +125,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   gm: {fileID: 0}
-  hitPrefab: {fileID: 5649868283061054732, guid: 6b4014c43c21ac54199c550126cae9af,
+  hitPrefab: {fileID: 4100626529617540020, guid: 63dd293826708d44c98a27d56362ab55,
     type: 3}

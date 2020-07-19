@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class Floatvariable : ScriptableObject
+public class EnemySO : ScriptableObject
 {
     public float Value;
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+﻿
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public EnemyBulletPooler enemyBulletPooler;
     public CoverBox coverBoxPrefab;
+
+    public bool ShowTileText;
 
     public Text timeText;
     public Text scoreText;
@@ -127,7 +127,7 @@ public class GameManager : MonoBehaviour
             for (int x = 0; x < gridXCount; x++, i++)
             {
                 GameTile t = tiles[z][x] = Instantiate(gameTilePrefab);
-                t.InitializeTile(x, z);
+                t.InitializeTile(x, z, ShowTileText);
                 t.transform.position = new Vector3(x * offsetX - offsetFromCenter, offsetFromGround + z * offsetZ, 0);
                 t.transform.parent = rowHolder.transform;
             }

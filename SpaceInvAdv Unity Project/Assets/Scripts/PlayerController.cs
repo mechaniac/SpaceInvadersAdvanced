@@ -21,12 +21,15 @@ public class PlayerController : LivingEntity
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
     }
     private void Update()
     {
         PlayerMovement();
         Shoot();
         currentShot += Time.deltaTime;
+
+        audioSource.volume = Mathf.Abs(velocity.x);
     }
 
     void PlayerMovement()
@@ -68,7 +71,7 @@ public class PlayerController : LivingEntity
         {
             turret.ShootProjectile(this.velocity);
             currentShot = 0;
-            audioSource.Play();
+            
         }
     }
 }

@@ -24,7 +24,7 @@ public class EnemyProjectile : LivingEntity
         }
     }
 
-    void Die()
+    public override void Die()
     {
         gameObject.SetActive(false);
     }
